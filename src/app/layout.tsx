@@ -1,6 +1,6 @@
-import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
-import "./reset.css"
+import { Metadata } from "next";
+import { Geist, Geist_Mono, Montserrat, Press_Start_2P } from "next/font/google";
+import "./reset.css";
 import "./globals.css";
 import NavBar from "@/components/navBar";
 
@@ -12,6 +12,16 @@ const geistSans = Geist({
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
+});
+
+const montserrat = Montserrat({
+  subsets: ["latin"],
+  weight: ["400", "700"],
+});
+
+const pressStart2P = Press_Start_2P({
+  subsets: ["latin"],
+  weight: ["400"],
 });
 
 export const metadata: Metadata = {
@@ -26,10 +36,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-br">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        <NavBar></NavBar>
+      <head>
+        {/* CDN do Font Awesome */}
+        <link
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+          rel="stylesheet"
+        />
+      </head>
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+        <NavBar />
         {children}
       </body>
     </html>
