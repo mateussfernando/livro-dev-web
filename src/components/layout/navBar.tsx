@@ -7,8 +7,8 @@ export default function NavBar() {
   // Cria um estado 'menuOpen' para controlar a visibilidade do menu. O valor inicial é 'false' (menu fechado)
   const [menuOpen, setMenuOpen] = useState(false);
 
-  // Função para alternar o estado do menu (abre ou fecha o menu)
-  const toggleMenu = () => {
+
+  function toggleMenu () {
     setMenuOpen(!menuOpen); // Alterna o valor do estado 'menuOpen'
   };
 
@@ -25,10 +25,10 @@ export default function NavBar() {
       <div
         className={`${
           menuOpen ? "top-[9%]" : "top-[-100%]" // Se o menu estiver aberto, a posição será 'top-[9%]', se fechado será 'top-[-100%]'
-        } nav-links duration-500 md:static absolute bg-white md:min-h-fit min-h-[60vh] left-0 w-full md:w-auto flex items-center px-5`} // Classe dinâmica para animar o menu e controlar a posição em dispositivos móveis
+        } nav-links duration-500 md:static absolute bg-white md:min-h-fit min-h-[30vh] left-0 w-full md:w-auto flex items-center px-5`} // Classe dinâmica para animar o menu e controlar a posição em dispositivos móveis
       >
         {/* Lista de itens do menu */}
-        <ul className="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8">
+        <ul className="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-1">
           <li>
             <button className="text-black text-[20px] font-bold font-[Montserrat]">INÍCIO</button>
           </li>
@@ -44,8 +44,8 @@ export default function NavBar() {
         </ul>
       </div>
 
-      {/* Ícone de menu hamburguer (visível em telas pequenas) */}
-      <div className="flex items-center gap-6 md:hidden">
+      {/* Ícone de menu hamburguer (visível em telas pequenas e tablets) */}
+      <div className="flex items-center gap-6 lg:hidden">
         <i
           className={`fa-solid ${
             menuOpen ? "fa-xmark" : "fa-bars" // Se o menu estiver aberto, mostra o ícone de "x" (fechar). Se fechado, mostra o ícone de "bars" (abrir)
