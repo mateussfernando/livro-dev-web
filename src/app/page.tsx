@@ -14,7 +14,7 @@ export default function Home() {
       </div>
 
       <div>
-        <Image src="/homemSentado.png" alt="Logo" width={411} height={411} />
+        <Image src="/homemSentado.png" alt="Logo" width={500} height={0} className="w-[100%] md:w-[411px] md:h-[411px]" />
       </div>
     </section>
   );
