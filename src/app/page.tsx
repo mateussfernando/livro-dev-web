@@ -1,21 +1,29 @@
+
+import ProductCarousel from "@/components/layout/productCarousel";
 import Image from "next/image";
 
 export default function Home() {
   return (
-    <section className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-[4rem] md:mt-[9rem]">
-      <div>
-        <h1 className="text-black text-[25px] font-['Press_Start_2P'] font-normal leading-normal">
+    <div className="pt-4">
+      <div className="px-4">
+        <h1 className="w-96 h-7 text-sm text-black font-normal font-['Press_Start_2P']">
           LER PARA CODAR MELHOR.
         </h1>
-        <span className="text-black text-[32px] font-[Montserrat] font-normal leading-normal">
+        <p className="w-80 h-11 text-black text-sm font-normal font-['Montserrat']">
           Descubra os livros essenciais para evoluir na programação e acelerar
           sua carreira tech.
-        </span>
+        </p>
       </div>
 
-      <div>
-        <Image src="/homemSentado.png" alt="Logo" width={500} height={0} className="w-[100%] md:w-[411px] md:h-[411px]" />
+      <div className="w-[100%] h-10 bg-[#F8F9FA] flex flex-row items-center justify-between px-4">
+        <span className="text-[#141e47] text-xs font-bold font-['Montserrat']">
+          Encontre o livro ideal para você!
+        </span>
+        <a className="text-[#8599ff] text-xs font-bold font-['Montserrat'] cursor-pointer">
+          Ver todos
+        </a>
       </div>
-    </section>
+      <ProductCarousel></ProductCarousel>
+    </div>
   );
 }
