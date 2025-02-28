@@ -3,6 +3,8 @@ import { Geist, Geist_Mono, Montserrat, Press_Start_2P } from "next/font/google"
 import "./reset.css";
 import "./globals.css";
 import NavBar from "@/components/layout/navBar";
+import NAVBAR from "@/components/layout/navBar";
+import { BOTTOMNAVMOBILE } from "@/components/layout/bottomNavMobile";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -38,13 +40,14 @@ export default function RootLayout({
     <html lang="pt-br">
       <head>
         {/* CDN do Font Awesome */}
-        <link
+        {/* <link
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
           rel="stylesheet"
-        />
+        /> */}
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-        <NavBar />
+        <NAVBAR></NAVBAR>
+        <BOTTOMNAVMOBILE></BOTTOMNAVMOBILE>
         {children}
       </body>
     </html>

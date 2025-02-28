@@ -26,7 +26,7 @@ body {
 /* Média query para telas pequenas (ex: celulares em modo retrato) */
 @media (max-width: 767px) {
   body {
-    padding: 0; /* Remove o padding em telas pequenas */
+    padding: 0rem; /* Remove o padding em telas pequenas */
   }
 
   /* Ajustar a direção da flexbox em telas menores */
@@ -39,7 +39,7 @@ body {
 /* Média query para telas médias (ex: tablets) */
 @media (min-width: 768px) and (max-width: 1024px) {
   body {
-    padding: 0; /* Remove o padding em tablets */
+    padding: 0rem; /* Remove o padding em tablets */
   }
 }
 
