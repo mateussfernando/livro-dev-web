@@ -5,7 +5,7 @@ import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 
-export default function NAVBAR() {
+export default function NavBar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   function toggleMenu() {

@@ -2,9 +2,8 @@ import { Metadata } from "next";
 import { Geist, Geist_Mono, Montserrat, Press_Start_2P } from "next/font/google";
 import "./reset.css";
 import "./globals.css";
+import { MobileBottomNav } from "@/components/layout/mobileBottomNav";
 import NavBar from "@/components/layout/navBar";
-import NAVBAR from "@/components/layout/navBar";
-import { BOTTOMNAVMOBILE } from "@/components/layout/bottomNavMobile";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -46,9 +45,9 @@ export default function RootLayout({
         /> */}
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-        <NAVBAR></NAVBAR>
-        <BOTTOMNAVMOBILE></BOTTOMNAVMOBILE>
+        <NavBar></NavBar>
         {children}
+        <MobileBottomNav></MobileBottomNav>
       </body>
     </html>
   );
