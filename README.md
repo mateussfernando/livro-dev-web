@@ -13,7 +13,7 @@ O **Livro.dev** é um site que recomenda livros para desenvolvedores, organizado
 
 ---
 
-Acesse o site em: [livrodev-netlify.app](http://livrodev-netlify.app)  
+Acesse o site em: [livrodev-netlify.app](http://livrodev.netlify.app)  
 *Lembrando que o projeto ainda está em desenvolvimento.*
 
 by Mateus Fernando
