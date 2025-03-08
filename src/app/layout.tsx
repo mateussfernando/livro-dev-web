@@ -2,8 +2,8 @@ import { Metadata } from "next";
 import { Geist, Geist_Mono, Montserrat, Press_Start_2P } from "next/font/google";
 import "./reset.css";
 import "./globals.css";
-import { MobileBottomNav } from "@/components/layout/mobileBottomNav";
 import NavBar from "@/components/layout/navBar";
+import { MobileBottomNav } from "@/components/mobile/mobileBottomNav";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",

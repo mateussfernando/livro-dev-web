@@ -1,10 +1,10 @@
-'use client';
+"use client";
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar as solidStar } from "@fortawesome/free-solid-svg-icons";
 import { faStar as regularStar } from "@fortawesome/free-regular-svg-icons";
 // import productsData from "../data/products.json"; // Importa os dados dos produtos a partir de um arquivo JSON
-import { productsData } from "../data/products";
+import { productsData } from "../../data/products";
 
 // Define a interface para as propriedades de um produto
 interface ProductProps {
@@ -29,7 +29,11 @@ class ProductCard extends React.Component<ProductProps> {
         {/* Área da imagem do produto */}
         <div className="h-[120px] bg-gray-200 flex items-center justify-center sm:h-[140px] md:h-[160px]">
           {image ? (
-            <img src={image} alt={title} className="w-full h-full object-cover" />
+            <img
+              src={image}
+              alt={title}
+              className="w-full h-full object-cover"
+            />
           ) : (
             <div className="text-gray-400 text-xs md:text-sm">Imagem</div>
           )}
@@ -42,7 +46,9 @@ class ProductCard extends React.Component<ProductProps> {
               <FontAwesomeIcon
                 key={i}
                 icon={i < rating ? solidStar : regularStar}
-                className={`w-3 h-3 md:w-4 md:h-4 ${i < rating ? "text-yellow-400" : "text-gray-300"}`}
+                className={`w-3 h-3 md:w-4 md:h-4 ${
+                  i < rating ? "text-yellow-400" : "text-gray-300"
+                }`}
               />
             ))}
           </div>
@@ -63,7 +69,7 @@ class ProductSection extends React.Component<ProductSectionProps> {
   render() {
     const { title, products } = this.props;
     return (
-      <div className="mb-6 md:mb-8">
+      <div className="mb-6 md:mb-8 md:hidden">
         {/* Título da seção */}
         <div className="flex items-center justify-between mb-3 md:mb-4">
           <h2 className="text-lg font-semibold text-gray-800 md:text-xl">
@@ -90,10 +96,14 @@ class ProductCarousel extends React.Component {
     return (
       <div className="w-full px-3 py-4 sm:px-4 md:container md:mx-auto md:px-4 md:py-6 lg:max-w-6xl">
         <ProductSection title="Mais Vendidos" products={maisVendidos} />
-        <ProductSection title="Melhores Avaliados" products={melhoresAvaliados} />
+        <ProductSection
+          title="Melhores Avaliados"
+          products={melhoresAvaliados}
+        />
       </div>
     );
   }
 }
+console.log(productsData);
 
 export default ProductCarousel;
