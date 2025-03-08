@@ -1,4 +1,5 @@
 {
+  "produtos": {
     "maisVendidos": [
       {
         "title": "JavaScript: O guia definitivo",
@@ -58,4 +59,4 @@
       }
     ]
   }
-  
+}

@@ -18,10 +18,10 @@ export default function NavBar() {
       {/* Menu (escondido em telas menores) */}
       <div className="hidden md:flex md:items-center md:gap-[4vw]">
         <ul className="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-1">
-          <li><button className="text-black text-[20px] font-bold font-montserrat">INÍCIO</button></li>
-          <li><button className="text-black text-[20px] font-bold font-montserrat">CONTATO</button></li>
-          <li><button className="text-black text-[20px] font-bold font-montserrat">ENCONTRE LIVROS</button></li>
-          <li><button className="text-black text-[20px] font-bold font-montserrat">LOGIN/CADASTRO</button></li>
+          <li><button className="text-black text-[20px] font-normal font-montserrat">Home</button></li>
+          <li><button className="text-black text-[20px] font-normal font-montserrat">Explorar</button></li>
+          <li><button className="text-black text-[20px] font-normal font-montserrat">Perfil</button></li>
+          <li><button className="text-black text-[20px] font-normal font-montserrat">Login</button></li>
         </ul>
       </div>
     </nav>
