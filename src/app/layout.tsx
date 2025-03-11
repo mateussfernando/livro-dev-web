@@ -1,9 +1,14 @@
 import { Metadata } from "next";
-import { Geist, Geist_Mono, Montserrat, Press_Start_2P } from "next/font/google";
+import {
+  Geist,
+  Geist_Mono,
+  Montserrat,
+  Press_Start_2P,
+} from "next/font/google";
 import "./reset.css";
 import "./globals.css";
 import NavBar from "@/components/layout/navBar";
-import { MobileBottomNav } from "@/components/mobile/mobileBottomNav";
+import { MobileBottomNav } from "@/components/layout/mobile/MobileBottomNav";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -27,7 +32,8 @@ const pressStart2P = Press_Start_2P({
 
 export const metadata: Metadata = {
   title: "Livro.dev - Recomendação de Livros para Desenvolvedores",
-  description: "Encontre os melhores livros sobre Front-end, Back-end, Inteligência Artificial, Cybersegurança e muito mais para aprimorar suas habilidades em tecnologia.",
+  description:
+    "Encontre os melhores livros sobre Front-end, Back-end, Inteligência Artificial, Cybersegurança e muito mais para aprimorar suas habilidades em tecnologia.",
 };
 
 export default function RootLayout({
@@ -37,9 +43,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-br">
-      <head>
-      </head>
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+      <head></head>
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+      >
         <NavBar></NavBar>
         {children}
         <MobileBottomNav></MobileBottomNav>

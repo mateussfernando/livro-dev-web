@@ -1,5 +1,5 @@
-import AboutSection from "@/components/mobile/aboutSection";
-import ProductCarousel from "@/components/mobile/productCarousel";
+import AboutSection from "@/components/layout/mobile/AboutSection";
+import ProductCarousel from "@/components/card/ProductCarousel";
 import Image from "next/image";
 
 export default function Home() {

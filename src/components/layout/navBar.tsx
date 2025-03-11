@@ -7,10 +7,10 @@ export default function NavBar() {
       {/* Logo */}
       <div>
         <Image 
-          src="/livro.dev logo 1.png" 
-          alt="Logo" 
+          src="/livrodevlogo.png" 
+          alt="Logo"
           width={500} 
-          height={500} 
+          height={500}  
           className="w-24 h-7"
         />
       </div>
