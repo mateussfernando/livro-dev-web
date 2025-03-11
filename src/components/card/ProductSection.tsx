@@ -4,7 +4,7 @@ import React from "react"; // Importa a biblioteca React para criar componentes
 import ProductCard from "./ProductCard"; // Importa o componente ProductCard, que exibe informações de um produto
 
 // Define a interface para as propriedades de um produto
-interface ProductProps {
+type ProductProps = {
   title: string;     // Título do produto
   category: string;  // Categoria do produto
   rating: number;    // Avaliação do produto (número de estrelas preenchidas)
@@ -12,7 +12,7 @@ interface ProductProps {
 }
 
 // Define a interface para as propriedades da seção de produtos
-interface ProductSectionProps {
+type ProductSectionProps = {
   title: string;            // Título da seção (por exemplo, "Mais Vendidos")
   products: ProductProps[]; // Array de produtos que serão exibidos na seção
 }

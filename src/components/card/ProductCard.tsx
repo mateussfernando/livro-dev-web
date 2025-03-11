@@ -3,7 +3,7 @@ import React from "react";
 import Image from "next/image";
 import StarRating from "./StarRating";
 
-interface ProductProps {
+type ProductProps = {
   title: string;
   category: string;
   rating: number;
