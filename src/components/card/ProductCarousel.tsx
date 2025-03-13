@@ -25,7 +25,7 @@ const ProductCarousel: React.FC = () => {
     // Função para buscar os dados da API
     const fetchData = async () => {
       try {
-        const response = await fetch("https://livro-dev-api.onrender.com");
+        const response = await fetch("https://livrodev-api.onrender.com");
         if (!response.ok) {
           throw new Error("Falha ao carregar os dados dos produtos");
         }
