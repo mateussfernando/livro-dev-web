@@ -1,12 +1,11 @@
 import AboutSection from "@/components/layout/mobile/AboutSection";
-import ProductCarousel from "@/components/card/ProductCarousel";
-import Image from "next/image";
+import BookCarousel from "@/components/card/BookCarousel";
 
 export default function Home() {
   return (
     <div>
-      <AboutSection></AboutSection>
-      <ProductCarousel></ProductCarousel>
+      <AboutSection/>
+      <BookCarousel/>
     </div>
   );
 }

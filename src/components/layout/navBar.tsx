@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function NavBar() {
   return (
-    <nav className="flex justify-between items-center w-full pl-4 pr-8 py-4">
+    <nav className="flex row justify-between items-center w-full pl-4 pr-8 py-4">
       {/* Logo */}
       <div>
         <Image 
@@ -14,6 +14,14 @@ export default function NavBar() {
           className="w-24 h-7"
         />
       </div>
+      <div>
+    <input
+        type="text"
+        placeholder="Procure um livro aqui"
+        className="p-2 w-[221px] h-[39px] text-gray-500 placeholder-gray-500 text-sm border-[1px] border-black rounded-lg focus:outline-none"
+    />
+</div>
+
       
       {/* Menu (escondido em telas menores) */}
       <div className="hidden md:flex md:items-center md:gap-[4vw]">

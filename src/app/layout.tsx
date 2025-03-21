@@ -43,7 +43,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-br">
-      <head></head>
+      <head>
+        <head>
+          <link rel="icon" href="/LOGODEVPIXEL.png" />
+        </head>
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
