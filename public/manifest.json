@@ -17,5 +17,14 @@
       "sizes": "512x512",
       "type": "image/png"
     }
+  ],
+  "lang": "pt",
+  "orientation": "portrait",
+  "dir": "auto",
+  "categories": [
+    "books",
+    "education",
+    "productivity",
+    "security"
   ]
 }
