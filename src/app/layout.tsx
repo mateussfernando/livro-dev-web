@@ -35,7 +35,7 @@ export const metadata: Metadata = {
   description:
     "Encontre os melhores livros sobre Front-end, Back-end, Inteligência Artificial, Cybersegurança e muito mais para aprimorar suas habilidades em tecnologia.",
   manifest: "/manifest.json", // Adicionado para PWA
-  themeColor: "#000000", // Adicionado para PWA
+  themeColor: "#ffffff", // Adicionado para PWA
   appleWebApp: {
     capable: true,
     title: "Livro.dev",
