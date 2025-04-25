@@ -34,6 +34,13 @@ export const metadata: Metadata = {
   title: "Livro.dev - Recomendação de Livros para Desenvolvedores",
   description:
     "Encontre os melhores livros sobre Front-end, Back-end, Inteligência Artificial, Cybersegurança e muito mais para aprimorar suas habilidades em tecnologia.",
+  manifest: "/manifest.json", // Adicionado para PWA
+  themeColor: "#000000", // Adicionado para PWA
+  appleWebApp: {
+    capable: true,
+    title: "Livro.dev",
+    statusBarStyle: "black",
+  },
 };
 
 export default function RootLayout({
@@ -44,9 +51,11 @@ export default function RootLayout({
   return (
     <html lang="pt-br">
       <head>
-        <head>
-          <link rel="icon" href="/LOGODEVPIXEL.png" />
-        </head>
+        <link rel="icon" href="/LOGODEVPIXEL.png" />
+        <link rel="apple-touch-icon" href="/LOGODEVPIXEL.png" />{" "}
+        {/* Adicionado para iOS */}
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="mobile-web-app-capable" content="yes" />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}

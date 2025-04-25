@@ -18,7 +18,7 @@ export default function NavBar() {
     <input
         type="text"
         placeholder="Procure um livro aqui"
-        className="p-2 w-[221px] h-[39px] text-gray-500 placeholder-gray-500 text-sm border-[1px] border-black rounded-lg focus:outline-none"
+        className="p-2 w-[150px] h-[39px] text-gray-500 placeholder-gray-500 text-sm border-[1px] border-black rounded-lg focus:outline-none"
     />
 </div>
 

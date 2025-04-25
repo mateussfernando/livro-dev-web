@@ -57,7 +57,7 @@ const BookCard: React.FC<BookCardProps> = ({ title, category, rating, image }) =
           {title}
         </h3>
         {/* Categoria do livro */}
-        <p className="description-card-category font-['Montserrat'] text-gray-500 text-xs mt-auto text-black">{category}</p>
+        <p className="description-card-category font-['Montserrat'] text-xs mt-auto text-black">{category}</p>
       </div>
     </div>
   );
